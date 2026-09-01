@@ -327,3 +327,4 @@ macOS には `sips` が最初から入っています。が、`sips -c <height> 
 ---
 
 AIに開発を任せてこれを作った記録は note に書いています: https://note.com/zeroyen_dev
+
