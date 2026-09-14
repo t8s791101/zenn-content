@@ -311,4 +311,4 @@ CI=true npx --yes wrangler@latest d1 execute jibun-kaizoudo-stats --remote --fil
 
 ---
 
-AIに開発を任せてこれを作った記録は note に書いています: https://note.com/zeroyen_dev
+「個人を特定できる情報を持たない」と決めた理由と、そこからAIにどこまで実装を任せたかは note に書いています: https://note.com/zeroyen_dev
