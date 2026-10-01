@@ -69,3 +69,4 @@ while (guard++ < 10) {                 // 無限ループ防止
 ---
 
 AI（Claude Code）に開発と運用を任せた記録を、費用0円で続けています。同じような記録は [note](https://note.com/zeroyen_dev) にまとめています。
+
