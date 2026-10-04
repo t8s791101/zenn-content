@@ -309,4 +309,4 @@ async function fetchBodyFromTransfer(url, expected) {
 
 ---
 
-この仕組みで動いているnoteアカウントと、AIに開発を任せた記録は note に書いています: https://note.com/zeroyen_dev
+この仕組みで動いているnoteアカウントと、AIに開発を任せた記録は note に書いています: https://note.com/zeroyen_dev/n/nda77fb5655ab

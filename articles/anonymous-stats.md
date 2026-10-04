@@ -311,4 +311,4 @@ CI=true npx --yes wrangler@latest d1 execute jibun-kaizoudo-stats --remote --fil
 
 ---
 
-AIに開発を任せてこれを作った記録は note に書いています: https://note.com/zeroyen_dev
+AIに開発を任せてこれを作った記録は note に書いています: https://note.com/zeroyen_dev/n/nda77fb5655ab

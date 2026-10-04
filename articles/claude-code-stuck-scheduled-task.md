@@ -78,6 +78,6 @@ find ~/Library/Logs -newermt "2026-09-25 09:00" ! -newermt "2026-09-25 11:00"
 
 ---
 
-AI（Claude Code）に開発と運用を任せた記録を、費用0円で続けています。同じような事故の記録は [note](https://note.com/zeroyen_dev) にまとめています。
+AI（Claude Code）に開発と運用を任せた記録を、費用0円で続けています。同じような事故の記録は [noteのまとめ](https://note.com/zeroyen_dev/n/nda77fb5655ab) にまとめています。
 
 
