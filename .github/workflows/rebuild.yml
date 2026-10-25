@@ -1,0 +1,25 @@
+# 毎月1日にテストを流し、通ればCloudflare Pagesを再ビルドさせる（年齢・年表示を最新に保つ）
+name: rebuild
+on:
+  schedule:
+    - cron: "7 0 1 * *"   # 毎月1日 日本時間 9:07（1月1日に年が切り替わる）
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node test.js
+      - run: node build.js
+      - name: Cloudflare Pages を再ビルド
+        if: github.event_name != 'push'
+        env:
+          HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "CF_DEPLOY_HOOK が未設定"; exit 1; fi
+          curl -fsS -X POST "$HOOK"

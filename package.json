@@ -1,0 +1,5 @@
+{
+  "name": "nenrei-navi",
+  "private": true,
+  "scripts": { "test": "node test.js", "build": "node build.js" }
+}
