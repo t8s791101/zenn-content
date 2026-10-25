@@ -1,0 +1,27 @@
+{
+  "id": "daily",
+  "title": "もこもこひつじの毎日つかえるスタンプ",
+  "titleEn": "Fluffy Sheep Everyday",
+  "description": "もこもこのひつじの、毎日つかえるあいさつと返事のスタンプ。「りょうかい」「ありがとう」「おつかれさま」など、家族にも友だちにも使える16種類。",
+  "descriptionEn": "Everyday greetings and replies from a fluffy sheep. 16 stickers.",
+  "peak": null,
+  "submitBy": null,
+  "stamps": [
+    {"t": ["おはよう"], "c": "#ff8c1a", "e": "happy", "m": "open", "size": 52, "props": [["spark", 300, 60, 1.3]]},
+    {"t": ["おやすみ"], "c": "#6c8ebf", "e": "sleep", "m": "flat", "tilt": -78, "props": [["zzz", 250, 100]]},
+    {"layout": "left", "t": ["りょうかい！"], "c": "#3aa35b", "e": "open", "props": [["maru", 285, 130]]},
+    {"layout": "left", "t": ["むりです"], "c": "#e2483d", "e": "cry", "m": "wavy", "props": [["batsu", 285, 130]]},
+    {"t": ["ありがとう"], "c": "#f25f7a", "e": "happy", "m": "open", "size": 50, "props": [["heart", 70, 80, 1.4], ["heart", 300, 60, 1.1, "#ff9fb1"]]},
+    {"t": ["ごめんね"], "c": "#6c8ebf", "e": "cry", "m": "flat", "size": 50, "props": [["sweat", 250, 90]]},
+    {"t": ["おつかれさま"], "c": "#ff8c1a", "e": "happy", "tilt": 6, "props": [["spark", 300, 60, 1.1, "#ffd166"]]},
+    {"layout": "left", "t": ["今から帰るね"], "c": "#3a7bd5", "e": "open", "props": [["phone", 280, 140]]},
+    {"layout": "left", "t": ["ひと休み"], "c": "#7b4a2e", "e": "happy", "props": [["cup", 285, 150]]},
+    {"t": ["いいね！"], "c": "#3a7bd5", "e": "star", "m": "open", "size": 54, "props": [["spark", 60, 60, 1.2], ["spark", 310, 60]]},
+    {"t": ["えっ！？"], "c": "#e2483d", "e": "open", "m": "o", "size": 56, "props": [["sweat", 250, 80]]},
+    {"t": ["まって"], "c": "#5a4636", "e": "open", "m": "flat", "size": 54, "props": []},
+    {"t": ["たのしみ！"], "c": "#ff8c1a", "e": "star", "m": "open", "props": [["spark", 300, 60], ["spark", 70, 70, 0.9]]},
+    {"t": ["だいじょうぶ？"], "c": "#3aa35b", "e": "open", "m": "smile", "props": [["heart", 300, 70, 1.1, "#5cbf75"]]},
+    {"t": ["ねむい…"], "c": "#6c8ebf", "e": "sleep", "m": "wavy", "props": [["zzz", 260, 80]]},
+    {"t": ["また", "あとでね"], "c": "#3a7bd5", "e": "wink", "m": "open", "props": [["heart", 185, 30, 1.1, "#7cc4f2"]]}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "newyear2027",
+  "title": "もこもこひつじの年賀スタンプ2027",
+  "titleEn": "Fluffy Sheep New Year 2027",
+  "description": "2027年はひつじ年！もこもこのひつじが「あけましておめでとう」「今年もよろしくね」から、お年玉・初詣・寝正月・こたつまで、お正月のあいさつをぜんぶ届けます。年末の「よいお年を」や、年明けの「ありがとう」にも使える16種類。",
+  "descriptionEn": "2027 is the Year of the Sheep! A fluffy sheep sends all your New Year greetings, from Happy New Year to shrine visits and lazy days under the kotatsu. 16 stickers.",
+  "peak": ["2026-12-25", "2027-01-10"],
+  "submitBy": "2026-11-27",
+  "stamps": [
+    {"t": ["あけまして", "おめでとう"], "e": "happy", "m": "open", "props": [["spark", 70, 60, 1.3], ["spark", 300, 70]]},
+    {"t": ["今年も", "よろしくね"], "c": "#3a7bd5", "e": "wink", "tilt": -6, "props": [["heart", 300, 80, 1.6]]},
+    {"layout": "left", "e": "happy", "props": [["banner", 270, 160, "謹賀新年"]]},
+    {"t": ["HAPPY NEW YEAR", "2027"], "c": "#ff8c1a", "e": "star", "m": "open", "props": [["spark", 60, 50, 1.2], ["spark", 310, 60]]},
+    {"layout": "left", "t": ["お年玉ちょうだい"], "e": "open", "m": "o", "tilt": 8, "props": [["envelope", 285, 150], ["spark", 300, 70]]},
+    {"layout": "left", "t": ["いってきます"], "c": "#5a4636", "e": "happy", "props": [["torii", 270, 140], ["label", 270, 70, "初詣", 40, "#e2483d"]]},
+    {"layout": "left", "t": ["食べすぎた…"], "c": "#6c8ebf", "e": "cry", "m": "wavy", "props": [["mochi", 280, 175], ["label", 280, 92, "おもち", 34]]},
+    {"t": ["寝正月"], "c": "#6c8ebf", "e": "sleep", "m": "flat", "tilt": -78, "props": [["zzz", 250, 100]]},
+    {"t": ["ありがとう"], "c": "#f25f7a", "e": "happy", "m": "open", "size": 50, "props": [["heart", 70, 80, 1.4], ["heart", 300, 60, 1.1, "#ff9fb1"]]},
+    {"layout": "left", "t": ["りょうかい！"], "c": "#3aa35b", "e": "open", "props": [["maru", 285, 130]]},
+    {"t": ["おつかれさま"], "c": "#ff8c1a", "e": "happy", "tilt": 6, "props": [["spark", 300, 60, 1.1, "#ffd166"]]},
+    {"layout": "left", "t": ["よいお年を"], "c": "#3a7bd5", "e": "wink", "m": "open", "props": [["flag", 260, 210, "またね"]]},
+    {"layout": "left", "t": ["大吉でた！"], "e": "star", "m": "open", "tilt": -8, "props": [["omikuji", 285, 140], ["spark", 330, 50, 1.2], ["spark", 240, 40, 0.8]]},
+    {"layout": "kotatsu", "t": ["こたつから出られない"], "c": "#5a4636", "e": "sleep", "props": [["kotatsu"]]},
+    {"layout": "left", "t": ["今年の目標は…"], "c": "#5a4636", "e": "open", "m": "flat", "props": [["sweat", 170, 100], ["paper", 275, 135]]},
+    {"t": ["今年もいっぱい", "会おうね"], "c": "#f25f7a", "e": "happy", "props": [["heart", 185, 30, 1.2]]}
+  ]
+}

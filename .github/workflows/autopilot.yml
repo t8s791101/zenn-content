@@ -1,0 +1,52 @@
+# 毎月1日と15日に、申請期限が近いテーマを自動で制作し、Issueで「申請するもの」を知らせる
+name: autopilot
+on:
+  schedule:
+    - cron: "17 0 1,15 * *"   # 日本時間 9:17
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - id: auto
+        run: |
+          set +e
+          node autopilot.js auto --days 45 > build.log 2>&1
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat build.log
+      - uses: actions/upload-artifact@v4
+        if: hashFiles('dist/**') != ''
+        with:
+          name: stamps-${{ github.run_number }}
+          path: dist/
+          retention-days: 90
+      - name: 状態を保存
+        run: |
+          git config user.name "autopilot"
+          git config user.email "autopilot@users.noreply.github.com"
+          git add state.json TODO.md 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "autopilot: 制作状態を更新" && git push)
+      - name: 申請のお知らせ
+        if: hashFiles('dist/**') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "新しいスタンプができました。下のリンクの Artifacts から zip をダウンロードし、LINE Creators Market で申請してください。"
+            echo
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo
+            echo '```'; cat build.log; echo '```'
+            echo
+            cat TODO.md
+          } > body.md
+          gh issue create --title "スタンプ申請 $(date +%Y-%m-%d)" --body-file body.md

@@ -1,0 +1,12 @@
+{
+  "name": "monetize-autopilot",
+  "private": true,
+  "description": "LINEスタンプの企画・制作・検査・申請一式づくりを自動で回す",
+  "scripts": {
+    "plan": "node autopilot.js plan",
+    "auto": "node autopilot.js auto"
+  },
+  "dependencies": {
+    "playwright": "1.56.1"
+  }
+}
