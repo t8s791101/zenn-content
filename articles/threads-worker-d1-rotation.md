@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare Workers の cron で Threads に毎日投稿する — 周回で計測記録ごと消していた1行と、直したあとの形"
+title: "Workers の cron で Threads に毎日投稿する — 周回で計測記録ごと消していた1行"
 emoji: "🔁"
 type: "tech"
 topics: ["cloudflare", "cloudflareworkers", "d1", "threads", "claudecode"]
