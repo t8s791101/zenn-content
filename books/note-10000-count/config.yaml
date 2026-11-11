@@ -1,0 +1,15 @@
+title: "1万件のnote記事で、売れ方を数えた"
+summary: "AIにnoteを72本書かせて売れなかったあと、有料記事1,313件・書き手846人・公称部数745件を自分で数えました。価格と部数、無料部分の長さ、売れている人の記事数。調べた結果は無料のチャプターで全部読めます。有料のチャプターは、集計スクリプトの全文（Python・標準ライブラリのみ）と、AIに2アカウントを運用させた2か月の事故の記録です。"
+topics: ["note", "python", "データ分析", "claudecode", "個人開発"]
+published: true
+price: 4980
+chapters:
+  - intro
+  - findings-1
+  - findings-2
+  - today
+  - free-end
+  - scripts-1
+  - scripts-2
+  - records
+  - numbers
